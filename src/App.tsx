@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar/Navbar"
 import { useEffect, useState } from "react"
+import Home from "./components/home/Home"
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <div className="app bg-gray-20">
       <Navbar isTop={isTop}  selectedPage = {selectedPage} setSelectedPage={setSelectedPage}/>
+      <Home setSelectedPage={setSelectedPage}/>
     </div>
   )
 }
