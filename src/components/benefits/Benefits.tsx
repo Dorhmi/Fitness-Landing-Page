@@ -4,11 +4,12 @@ import Benefit from "./Benefit"
 import BenefitsPageGraphic from '@/assets/BenefitsPageGraphic.png'
 import ActionButton from "@/shared/ActionButton"
 import { motion } from "framer-motion"
+import { BenefitType } from "@/shared/types"
 
 
 
 
-const benefits = [
+const benefits: Array<BenefitType> = [
     {
         icon: <HomeModernIcon className=" h-6 w-6"/>,
         title:"State of the Art Facilities",
@@ -75,7 +76,7 @@ return (
             viewport={{once: true, amount: 0.5}}
             variants={container}
             >
-                {benefits.map((benefit , index) => (
+                {benefits.map((benefit: BenefitType , index) => (
                     <Benefit key={index} {...benefit} setSelectedPage={setSelectedPage} />
                 ))}
             </motion.div>
@@ -84,7 +85,7 @@ return (
                 {/* img */}
                 <img className=" mx-auto " src={BenefitsPageGraphic} alt="BenefitsPageGraphic" />
                 {/* description */}
-                <div className=" md:w-1/2 mt-16">
+                <div className=" ml-8 mt-16">
                     {/* title */}
                     <div className=" relative z-10 ">
                         <div className=" before:absolute before:content-abstractwaves before:z-[-1] before:-top-[75px] before:-left-[60px]">
