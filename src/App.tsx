@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar/Navbar"
 import { useEffect, useState } from "react"
 import Home from "./components/home/Home"
+import Benefits from "./components/benefits/Benefits"
 
 
 
@@ -21,9 +22,10 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className="app bg-gray-20 ">
       <Navbar isTop={isTop}  selectedPage = {selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}/>
+      <Benefits setSelectedPage={setSelectedPage}/>
     </div>
   )
 }

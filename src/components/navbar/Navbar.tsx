@@ -2,7 +2,7 @@ import logo from '@/assets/Logo.png'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { Bars3Icon , XMarkIcon } from '@heroicons/react/16/solid'
 import Link from './Link'
-import ActionButton from './ActionButton'
+import ActionButton from '../../shared/ActionButton'
 import { useState } from 'react'
 
 type Props = {

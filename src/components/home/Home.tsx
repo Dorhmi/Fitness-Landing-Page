@@ -4,7 +4,7 @@ import SponsorForbes from '@/assets/SponsorForbes.png'
 import SponsorFortune from '@/assets/SponsorFortune.png'
 import SponsorRedBull from '@/assets/SponsorRedBull.png'
 import Arrow from '@/assets/Arrow.png'
-import ActionButton from '../navbar/ActionButton'
+import ActionButton from '../../shared/ActionButton'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import {motion} from 'framer-motion'
@@ -35,7 +35,7 @@ return (
                     }}
                     >
                     <img src={HomePageText} alt="HomePageText" />
-                    <p className=' text-sm w-[600px] md:w-[450px] mt-4'>
+                    <p className=' text-sm  md:w-[450px] mt-4'>
                         Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
                         Studios to get the Body Shapes That you Dream of.. Get Your Dream
                         Body Now.
@@ -57,7 +57,8 @@ return (
                     </ActionButton>
                     <AnchorLink 
                     className=' cursor-pointer text-sm text-primary-500 underline hover:text-secondary-500'
-                    href='contactus'
+                    href='#contactus'
+                    onClick={()=>setSelectedPage("contactus")}
                     >
                         Learn More
                     </AnchorLink>
